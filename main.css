@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'helvetica';
+  max-width: 1300px;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.nav > .nav-selected-text {
+  display: none;
+}
+
+.nav > .nav-logo {
+  width: 267px;
+  position: relative;
+}
+
+.nav > .nav-logo > div.sign {
+  background-image: url(assets/logo-sign.png);
+  width: 78px;
+  height: 72px;
+  position: relative;
+  left: -3px;
+  top: 0px;
+}
+
+.nav > .nav-logo > div.jedi {
+  background-image: url(assets/logo-jedi.png);
+  width: 72px;
+  height: 38px;
+  position: absolute;
+  left: 83px;
+  top: 7px;
+}
+
+.nav > .nav-logo > span.text {
+  font-size: 14px;
+  position: absolute;
+  right: 2px;
+  bottom: 10px;
+  letter-spacing: 0.15px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav > .nav-links {
+  margin-left: auto;
+}
+
+.nav > .nav-links > ul > li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.nav > .nav-links > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 0;
+  letter-spacing: 0.7px;
+}
+
+.nav > .nav-links > ul > li:last-child > a {
+  font-size: 16px;
+}
+
+.nav > .nav-links > ul > li > a.selected {
+  border-bottom: 2px solid #17bfbf;
+}
+
+.nav > .nav-links > ul > li > a:not(.selected):hover {
+  border-bottom: 2px solid grey;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    padding: initial;
+  }
+
+  .nav > .nav-btn {
+    display: block;
+  }
+
+  .nav > .nav-btn > label {
+    margin-bottom: 0;
+    display: block;
+    padding: 16px 12px 16px 16px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    height: 8px;
+    width: 24px;
+    position: relative;
+  }
+
+  .nav > .nav-btn > label > span::before {
+    width: 24px;
+    height: 6px;
+    border-top: 2px solid #000;
+    border-radius: 3px;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 2px;
+  }
+
+  .nav > .nav-btn > label > span::after {
+    width: 24px;
+    height: 7px;
+    border-bottom: 2px solid #000;
+    border-radius: 3px;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -1px;
+  }
+
+  .nav > .nav-selected-text {
+    font-size: 25px;
+    display: block;
+  }
+
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: whitesmoke;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 56px;
+    left: 0px;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > .nav-links > ul > li {
+    display: block;
+    padding: 10px 10px 10px 15px;
+  }
+
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+
+  .nav > .nav-logo {
+    width: 267px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .nav > .nav-logo::before {
+    content: '';
+    position: absolute;
+    box-shadow: 0px 2px 3px 0px rgba(160, 160, 160, 0.36);
+    width: 100%;
+    height: 3px;
+    left: 0px;
+    top: -3px;
+  }
+
+  .nav > .nav-logo > div.sign,
+  .nav > .nav-logo > div.jedi {
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav > .nav-logo > div.jedi {
+    margin-top: 6px;
+  }
+
+  .nav > .nav-logo > span.text {
+    position: initial;
+    margin-top: 19px;
+    display: inline-block;
+  }
+
+  .nav > .nav-logo > span.text {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+  }
+}
