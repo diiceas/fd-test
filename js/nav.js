@@ -1,7 +1,5 @@
-function Nav() {}
-
 const htmlElements = {
-  links: document.querySelectorAll('.nav > .nav-links > ul > li > a')
+  links: document.querySelectorAll('.nav > .nav-links > ul > li > a[data-select]')
 };
 
 const addClass = (className, ...elements) => {
@@ -15,6 +13,8 @@ const removeClass = (className, ...elements) => {
     link.classList.remove('selected');
   });
 };
+
+function Nav() {}
 
 Nav.prototype.init = () => {
   htmlElements.links.forEach(link => {

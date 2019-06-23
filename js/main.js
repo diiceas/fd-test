@@ -1,5 +1,5 @@
 import { Nav } from './nav.js';
-import './carousel.js';
+import { Carousel } from './carousel.js';
 
-const nav = new Nav();
-nav.init();
+new Nav().init();
+new Carousel().init(5000);
