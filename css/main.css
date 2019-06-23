@@ -1,0 +1,13 @@
+@import url('./nav.css');
+@import url('./responsive.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'helvetica';
+  max-width: 1300px;
+  margin: auto;
+}
