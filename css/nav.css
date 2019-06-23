@@ -55,7 +55,7 @@
 
 .nav > .nav-links > ul > li {
   display: inline-block;
-  margin: 0 18px;
+  margin: 0 15px;
 }
 
 .nav > .nav-links > ul > li > a {
@@ -70,6 +70,8 @@
 
 .nav > .nav-links > ul > li:last-child > a {
   font-size: 16px;
+  position: relative;
+  top: 2px;
 }
 
 .nav > .nav-links > ul > li > a.selected {

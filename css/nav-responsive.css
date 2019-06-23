@@ -57,6 +57,7 @@
     overflow-y: hidden;
     top: 56px;
     left: 0px;
+    z-index: 5;
   }
 
   .nav > .nav-links > a {
@@ -66,7 +67,7 @@
 
   .nav > .nav-links > ul > li {
     display: block;
-    padding: 10px 10px 10px 15px;
+    padding: 10px 0;
   }
 
   .nav > #nav-check:not(:checked) ~ .nav-links {
@@ -111,6 +112,7 @@
   .nav > .nav-logo > span.text {
     position: initial;
     margin-top: 19px;
+    margin-bottom: 34px;
     display: inline-block;
   }
 

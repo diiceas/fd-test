@@ -4,11 +4,6 @@
   margin: auto;
 }
 
-.carousel-wrapper * {
-  box-sizing: border-box;
-}
-
-/* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
 .photo {
   opacity: 0;
   position: absolute;
@@ -19,31 +14,28 @@
   transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
 }
 
-/* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
-.photo.initial,
+/* bring active item to the front.*/
 .photo.active {
   opacity: 1;
   position: relative;
   z-index: 2;
 }
 
-/* Set 'z-index' to sit behind our '.active' item. */
+/* set 'z-index' to stay behind our '.active' item. */
 .photo.prev,
 .photo.next {
   z-index: 1;
 }
 
-/* Translate previous item to the left */
 .photo.prev {
   transform: translateX(-100%);
 }
 
-/* Translate next item to the right */
 .photo.next {
   transform: translateX(100%);
 }
 
-/* Style navigation buttons to sit in the middle, either side of the carousel. */
+/* navigation buttons for both sides of the carousel. */
 .carousel-button-prev,
 .carousel-button-next {
   position: absolute;
@@ -52,7 +44,6 @@
   height: 100%;
   cursor: pointer;
   z-index: 3;
-  border: 1px solid black;
 }
 
 .carousel-button-prev {
@@ -63,8 +54,9 @@
   right: 0;
 }
 
-/* Use pseudo elements to insert arrows inside of navigation buttons */
-.carousel-button-next::after {
+/* use pseudo elements to insert arrows inside of navigation buttons */
+.carousel-button-next::after,
+.carousel-button-prev::after {
   content: ' ';
   position: absolute;
   width: 0;
@@ -73,24 +65,33 @@
   border-bottom: 10px solid transparent;
   border-left: 20px solid white;
   transform: translate(0, -50%);
-  right: 30px;
   top: 50%;
 }
 
-.carousel-button-next::before {
+.carousel-button-next::after {
+  right: 30px;
+}
+
+.carousel-button-prev::after {
+  left: 30px;
+  transform: translate(0%, -50%) rotate(-180deg);
+}
+
+.carousel-button-next::before,
+.carousel-button-prev::before {
   content: ' ';
   position: absolute;
   width: 30px;
   height: 3px;
   background-color: white;
   transform: translate(0, -50%);
-  right: 50px;
   top: 50%;
 }
 
-/* .carousel-button-prev::after, */
+.carousel-button-next::before {
+  right: 50px;
+}
 
-/* .carousel-button-next::after {
-  left: 47%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-} */
+.carousel-button-prev::before {
+  left: 50px;
+}
