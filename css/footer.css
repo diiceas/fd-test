@@ -119,6 +119,10 @@ footer > .top > .middle > .blog-description > .date-title > .date {
   left: 17px;
 }
 
+footer > .top > .middle > .blog-description > .date-title > .title > a {
+  color: white;
+}
+
 footer > .top > .middle > .blog-description > .date-title > .date::before {
   content: '';
   position: absolute;
