@@ -1,0 +1,30 @@
+.features {
+  padding: 25px 0;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.features h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.features > .feature-list > .feature {
+  width: 280px;
+  margin: 15px;
+  margin: 42px 15px 0px;
+}
+
+.features > .feature-list > .feature > .title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.features > .feature-list > .feature > .title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 0;
+}
