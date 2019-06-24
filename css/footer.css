@@ -10,12 +10,6 @@ footer > .top > .left > .logo-jedi {
   margin-bottom: 4px;
 }
 
-/* footer .logo-jedi {
-  width: 100%;
-  text-align: center;
-  padding-top: 20px;
-} */
-
 footer > .top > .left > .logo-jedi > div.sign {
   background-image: url('../assets/logo-sign-grey.png');
   width: 78px;
@@ -189,22 +183,3 @@ footer > .top > .right > form .btn-info:active,
 footer > .top > .right > form .btn-info:focus {
   box-shadow: none !important;
 }
-
-/* footer .logo-jedi > div.jedi {
-  position: initial;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* footer .logo-jedi > div.jedi {
-  margin-top: 6px;
-}
-
-footer .logo-jedi > span.text {
-  position: initial;
-  margin-top: 19px;
-  margin-bottom: 34px;
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: -0.5px;
-} */
