@@ -18,5 +18,45 @@
 
 .projects > .subtitle {
   font-size: 34px;
-  margin-bottom: 130px;
+}
+
+.projects > .links {
+  margin: 48px auto 0;
+  max-width: 830px;
+}
+
+.projects > .links > ul {
+  padding-left: 0;
+}
+
+.projects > .links > ul > li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.projects > .links > ul > li > a {
+  text-decoration: none;
+  color: #6e6e6e;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 14px 0;
+  letter-spacing: 0.7px;
+}
+
+.projects > .links > ul > li > a.selected {
+  color: black;
+  border-bottom: 2px solid #4b4a4a;
+}
+
+.projects > .links > ul > li > a:not(.selected):hover {
+  border-bottom: 2px solid grey;
+}
+
+.projects .images {
+  margin-top: 50px;
+}
+
+.projects .images img {
+  padding: 14px 14px;
 }

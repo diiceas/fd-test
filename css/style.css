@@ -4,6 +4,10 @@
 @import url('./main.projects.css');
 @import url('./main.projects.responsive.css');
 
+:root {
+  --max-width: 1300px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +15,6 @@
 body {
   margin: 0px;
   font-family: 'helvetica';
-  max-width: 1300px;
+  max-width: var(--max-width);
   margin: auto;
 }

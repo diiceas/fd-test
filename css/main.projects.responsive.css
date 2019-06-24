@@ -19,4 +19,21 @@
   .projects > .subtitle {
     font-size: 30px;
   }
+
+  .projects > .links > ul > li {
+    display: block;
+    text-align: center;
+  }
+
+  .projects > .links > ul > li:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .projects > .links > ul {
+    padding-top: 5px;
+  }
+
+  .projects .images {
+    margin-top: 46px;
+  }
 }

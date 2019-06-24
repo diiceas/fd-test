@@ -1,7 +1,7 @@
 import { addClass, removeClass } from './helper.js';
 
 const htmlElements = {
-  links: document.querySelectorAll('.nav > .nav-links > ul > li > a[data-select]')
+  links: document.querySelectorAll('.nav > .nav-links > ul > li > a')
 };
 
 function Nav() {}
