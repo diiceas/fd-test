@@ -1,0 +1,22 @@
+.projects {
+  border-top: 22px solid #f4f4f4;
+}
+
+.projects > .title,
+.projects > .subtitle {
+  display: block;
+  text-align: center;
+  font-family: 'roboto';
+  line-height: 1.4;
+  color: #434345;
+}
+
+.projects > .title {
+  font-size: 50px;
+  margin-top: 74px;
+}
+
+.projects > .subtitle {
+  font-size: 34px;
+  margin-bottom: 130px;
+}
