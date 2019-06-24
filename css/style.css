@@ -6,6 +6,8 @@
 @import url('./main.projects.responsive.css');
 @import url('./main.features.css');
 @import url('./main.features.responsive.css');
+@import url('./footer.css');
+@import url('./footer.responsive.css');
 
 :root {
   --max-width: 1300px;

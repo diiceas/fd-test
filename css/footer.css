@@ -1,0 +1,94 @@
+footer {
+  background-color: #303030;
+  color: white;
+}
+
+footer > .top > .left > .logo-jedi {
+  position: relative;
+  width: 267px;
+  margin-bottom: 10px;
+}
+
+/* footer .logo-jedi {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+} */
+
+footer > .top > .left > .logo-jedi > div.sign {
+  background-image: url('../assets/logo-sign-grey.png');
+  width: 78px;
+  height: 72px;
+  position: relative;
+  left: -3px;
+  top: 0px;
+}
+
+footer > .top > .left > .logo-jedi > div.jedi {
+  background-image: url('../assets/logo-jedi-grey.png');
+  width: 75px;
+  height: 39px;
+  position: absolute;
+  left: 83px;
+  top: 7px;
+}
+
+footer > .top > .left > .logo-jedi > span.text {
+  font-size: 14px;
+  position: absolute;
+  right: 2px;
+  bottom: 10px;
+  letter-spacing: 0.15px;
+}
+
+footer .text-grey {
+  color: #8c8c8c;
+}
+
+footer > .top {
+  padding-top: 26px;
+  padding-left: 86px;
+  padding-right: 86px;
+}
+
+footer > .top > .left {
+  width: 375px;
+}
+
+footer > .top > .left > .social > .icon {
+  margin: 25px 5px 0;
+}
+
+footer > .top > .left > .address {
+  padding-right: 45px;
+}
+
+footer .bottom {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 15px;
+}
+
+footer .bottom a {
+  /* color: white; */
+  text-decoration: underline;
+}
+
+/* footer .logo-jedi > div.jedi {
+  position: initial;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* footer .logo-jedi > div.jedi {
+  margin-top: 6px;
+}
+
+footer .logo-jedi > span.text {
+  position: initial;
+  margin-top: 19px;
+  margin-bottom: 34px;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+} */

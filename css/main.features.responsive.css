@@ -1,4 +1,8 @@
 @media (max-width: 900px) {
+  .features {
+    padding-bottom: 25px;
+  }
+
   .features > .feature-list > .feature {
     width: 100%;
     margin: 42px 23px 10px;

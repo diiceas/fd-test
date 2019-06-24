@@ -17,10 +17,11 @@
 .nav > .nav-logo {
   width: 267px;
   position: relative;
+  cursor: pointer;
 }
 
 .nav > .nav-logo > div.sign,
-.logo-jedi > div.sign {
+main .logo-jedi > div.sign {
   background-image: url('../assets/logo-sign.png');
   width: 78px;
   height: 72px;
@@ -30,7 +31,7 @@
 }
 
 .nav > .nav-logo > div.jedi,
-.logo-jedi > div.jedi {
+main .logo-jedi > div.jedi {
   background-image: url('../assets/logo-jedi.png');
   width: 72px;
   height: 38px;
@@ -40,7 +41,7 @@
 }
 
 .nav > .nav-logo > span.text,
-.logo-jedi > span.text {
+main .logo-jedi > span.text {
   font-size: 14px;
   position: absolute;
   right: 2px;
@@ -48,25 +49,25 @@
   letter-spacing: 0.15px;
 }
 
-.logo-jedi {
+main .logo-jedi {
   display: none;
   width: 100%;
   text-align: center;
   padding-top: 20px;
 }
 
-.logo-jedi > div.sign,
-.logo-jedi > div.jedi {
+main .logo-jedi > div.sign,
+main .logo-jedi > div.jedi {
   position: initial;
   margin-left: auto;
   margin-right: auto;
 }
 
-.logo-jedi > div.jedi {
+main .logo-jedi > div.jedi {
   margin-top: 6px;
 }
 
-.logo-jedi > span.text {
+main .logo-jedi > span.text {
   position: initial;
   margin-top: 19px;
   margin-bottom: 34px;
