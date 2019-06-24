@@ -4,13 +4,13 @@ const htmlElements = {
 
 const addClass = (className, ...elements) => {
   elements.forEach(link => {
-    link.classList.add('selected');
+    link.classList.add(className);
   });
 };
 
 const removeClass = (className, ...elements) => {
   elements.forEach(link => {
-    link.classList.remove('selected');
+    link.classList.remove(className);
   });
 };
 
