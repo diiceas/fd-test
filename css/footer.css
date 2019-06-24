@@ -6,7 +6,8 @@ footer {
 footer > .top > .left > .logo-jedi {
   position: relative;
   width: 267px;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
 /* footer .logo-jedi {
@@ -36,9 +37,9 @@ footer > .top > .left > .logo-jedi > div.jedi {
 footer > .top > .left > .logo-jedi > span.text {
   font-size: 14px;
   position: absolute;
-  right: 2px;
-  bottom: 10px;
   letter-spacing: 0.15px;
+  left: 86px;
+  top: 41px;
 }
 
 footer .text-grey {
@@ -46,34 +47,49 @@ footer .text-grey {
 }
 
 footer > .top {
-  padding-top: 26px;
-  padding-left: 86px;
-  padding-right: 86px;
+  padding: 26px 84px 30px;
 }
 
 footer > .top > .left {
-  width: 375px;
+  width: 335px;
+}
+
+footer > .top > .left > .social {
+  margin-top: 25px;
 }
 
 footer > .top > .left > .social > .icon {
-  margin: 25px 5px 0;
+  margin: 0px 5px 0;
 }
 
 footer > .top > .left > .address {
-  padding-right: 45px;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+footer > .top > .left > .phone-email {
+  display: inline-block;
 }
 
 footer .bottom {
   text-align: center;
-  padding: 25px 0;
-  font-size: 15px;
+  padding: 22px 0;
+  font-size: 14px;
 }
 
 footer .bottom a {
   text-decoration: underline;
 }
-
 footer > .top > .middle {
+  width: 320px;
+}
+
+footer > .top > .right {
+  width: 360px;
+}
+
+footer > .top > .middle,
+footer > .top > .right {
   padding-top: 15px;
 }
 
@@ -98,6 +114,7 @@ footer > .top > .middle > .blog-description > .date-title > .date {
   letter-spacing: 0.3px;
   display: block;
   margin-top: 6px;
+  margin-bottom: 2px;
   position: relative;
   left: 17px;
 }
@@ -115,6 +132,58 @@ footer > .top > .middle > .blog-description > .date-title > .date::before {
 footer > .top > .middle > .blog-description > .date-title > .title {
   letter-spacing: 0.3px;
   font-size: 17px;
+}
+
+footer > .top > .right > .title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+footer > .top > .right > form {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+footer > .top > .right > form input,
+footer > .top > .right > form textarea {
+  color: white;
+  background: transparent;
+  border-radius: 4px;
+  padding: 8px 18px;
+  outline: 0;
+  border-style: solid;
+  border: 2px solid #5a5a5a;
+  margin-top: 10px;
+  width: 100%;
+}
+
+footer > .top > .right > form textarea {
+  resize: none;
+  height: 80px;
+}
+
+footer > .top > .right > form input::placeholder,
+footer > .top > .right > form textarea::placeholder {
+  color: white;
+}
+
+footer > .top > .right > form button {
+  margin-top: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  padding: 10px 30px;
+  background-color: #43cbcb;
+}
+
+/*disable bootstrap shadow for the button*/
+footer > .top > .right > form .btn-info:hover,
+footer > .top > .right > form .btn-info:active,
+footer > .top > .right > form .btn-info:focus {
+  box-shadow: none !important;
 }
 
 /* footer .logo-jedi > div.jedi {
