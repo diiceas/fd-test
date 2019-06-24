@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+  .carousel-button-next::after,
+  .carousel-button-prev::after {
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-left-width: 15px;
+  }
+
+  .carousel-button-next::before,
+  .carousel-button-prev::before {
+    width: 25px;
+    height: 2px;
+  }
+
+  .carousel-button-next::before {
+    right: 45px;
+  }
+
+  .carousel-button-prev::before {
+    left: 45px;
+  }
+}
