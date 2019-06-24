@@ -1,5 +1,59 @@
 @media (max-width: 900px) {
-  footer .bottom {
+  footer .bottom,
+  footer > .top > .right,
+  footer > .top > .middle,
+  footer > .top > .left > .phone-email {
     display: none;
+  }
+
+  footer > .top > .left > .social {
+    display: none !important; /*override bootstrap style*/
+  }
+
+  footer > .top {
+    justify-content: center !important;
+  }
+
+  footer > .top > .left {
+    width: 100%;
+  }
+
+  footer > .top > .left > .logo-jedi {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  footer > .top > .left > .logo-jedi > div.sign {
+    margin: 22px auto 0;
+    left: 0px;
+  }
+
+  footer > .top > .left > .logo-jedi > div.jedi {
+    position: initial;
+    margin: 7px auto 0;
+  }
+
+  footer > .top > .left > .logo-jedi > span.text {
+    position: relative;
+    margin: auto;
+    left: 0px;
+    top: -6px;
+  }
+
+  footer > .top > .left > .address {
+    padding: 0;
+    margin: 5px auto 0;
+    width: 200px;
+    display: block;
+    text-align: center;
+  }
+
+  footer > .top > .left > .address > .text-grey {
+    font-size: 12px;
+  }
+
+  footer > .top {
+    padding-bottom: 20px;
   }
 }
