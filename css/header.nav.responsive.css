@@ -71,11 +71,11 @@
     padding: 10px 0;
   }
 
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+  .nav > #chk-nav:not(:checked) ~ .nav-links {
     height: 0px;
   }
 
-  .nav > #nav-check:checked ~ .nav-links {
+  .nav > #chk-nav:checked ~ .nav-links {
     height: calc(100vh - 56px);
     overflow-y: auto;
   }
