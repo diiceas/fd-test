@@ -70,8 +70,51 @@ footer .bottom {
 }
 
 footer .bottom a {
-  /* color: white; */
   text-decoration: underline;
+}
+
+footer > .top > .middle {
+  padding-top: 15px;
+}
+
+footer > .top > .middle > .title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+footer > .top > .middle > .blog-description {
+  margin-top: 20px;
+}
+
+footer > .top > .middle > .blog-description > .image {
+  padding-right: 20px;
+}
+
+footer > .top > .middle > .blog-description > .date-title > .date {
+  color: grey;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  display: block;
+  margin-top: 6px;
+  position: relative;
+  left: 17px;
+}
+
+footer > .top > .middle > .blog-description > .date-title > .date::before {
+  content: '';
+  position: absolute;
+  left: -17px;
+  top: 1px;
+  width: 13px;
+  height: 13px;
+  background-image: url('/assets/blog/arrow.png');
+}
+
+footer > .top > .middle > .blog-description > .date-title > .title {
+  letter-spacing: 0.3px;
+  font-size: 17px;
 }
 
 /* footer .logo-jedi > div.jedi {
